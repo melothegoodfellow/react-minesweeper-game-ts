@@ -3,7 +3,7 @@ import React from "react";
 import "./NumberDisplay.scss";
 
 interface NumberDisplayProps {
-    value: number
+    value: number;
 }
 
 const NumberDisplay: React.FC<NumberDisplayProps> = (props) => {
