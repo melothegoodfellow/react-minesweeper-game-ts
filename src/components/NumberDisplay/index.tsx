@@ -6,10 +6,10 @@ interface NumberDisplayProps {
     value: number;
 }
 
-const NumberDisplay: React.FC<NumberDisplayProps> = (props) => {
+const NumberDisplay: React.FC<NumberDisplayProps> = ({ value }) => {
     return (
         <div className="NumberDisplay">
-            {props.value.toString().padStart(3, '0')}
+            {value.toString().padStart(3, '0')}
         </div>
     );
 }

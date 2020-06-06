@@ -19,14 +19,15 @@ export enum CellState {
 
 export enum Smileys {
     grin = '😃',
-    shock = '😮',
-    lost = '',
-    won = ''
+    shock = '😯',
+    lost = '😞',
+    won = '😎'
 }
 
 export type Cell = {
     value: CellValue,
-    state: CellState
+    state: CellState,
+    red?: boolean
 }
 
 export type Smiley = {
